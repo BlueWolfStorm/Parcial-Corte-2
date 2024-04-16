@@ -1,0 +1,31 @@
+spring:
+    application:
+        name: Parcial-Corte-2
+    datasource:
+        url: jdbc:postgresql://129.146.249.153:5490/02210131006
+        username: admin
+        password: admin
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+                show_sql: false
+                format_sql: false
+        generate-ddl: true
+        hibernate:
+            ddl-auto: update
+    mail:
+        host: smtp.gmail.com
+        port: 587
+        username: jaideradolfo65@gmail.com
+        password: cvntnbwsccjtkvmt
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+
+jwt:
+  key: SeSuponeAquiVaLaClaveSecretePeroSeRecomiendaUsarlaComoVariableDeEntornoMasComoEstoEsUnEjemploYLaClaveSeSuponeEsLargaEntoncesLaDejoAsiJAKSDJKASDJKASJDKjk
+  access-token-expiration: 30000000 # 5 minutes = 300000 ms

@@ -1,0 +1,26 @@
+[
+  {
+    "className": "SubMenu",
+    "classParameters": "String name,Menu menu,LocalDateTime creationDate"
+  },
+  {
+    "className": "Menu",
+    "classParameters": "String name,LocalDateTime creationDate,List<SubMenu> subMenus"
+  },
+  {
+    "className": "Rol",
+    "classParameters": "String name,List<Menu> menusAvailable,LocalDateTime creationDate"
+  },
+  {
+    "className": "UserAccount",
+    "classParameters": "boolean isDisabled, String name, String address, String email, ArrayBuffer password, String phone, LocalDateTime creationDate, List<Rol> roleList, List<LoginHistory> loginHistory"
+  },
+  {
+    "className": "LoginHistory",
+    "classParameters": "LocalDateTime loginDate, UserAccount userAccount"
+  },
+  {
+    "className": "NotificationHistory",
+    "classParameters": "LocalDateTime notificationDate, UserAccount userAccount"
+  }
+]
